@@ -20,7 +20,7 @@ import SecondaryButton from "@/components/Buttons/SecondaryButton.vue";
           <span class="btn btn-primary px-3 py-2 rounded-pill">1 of 10</span>
         </div>
         <h2 class="mb-0 h2">
-          Adding Attraction
+          Adding Accommodations
         </h2>
       </div>
       <b-row class="mt-2 mt-md-4">
