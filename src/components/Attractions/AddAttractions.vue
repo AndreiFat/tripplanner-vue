@@ -34,7 +34,9 @@ export default {
                       step-number="1"
                       title="Add Attractions"/>
       </b-row>
-      <PrimaryButton class="pb-md-5">Add Your Attractions</PrimaryButton>
+      <div class="d-flex justify-content-center">
+        <PrimaryButton class="">Add Your Attractions</PrimaryButton>
+      </div>
     </b-container>
     <AppFooter/>
   </div>
