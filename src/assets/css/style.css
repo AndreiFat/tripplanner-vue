@@ -1,0 +1,242 @@
+body {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    color: #1e1e1e !important;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: #1e1e1e !important;
+}
+
+a.hover {
+    color: #1e1e1e !important;
+}
+
+.rounded-5 {
+    border-radius: 32px;
+}
+
+.rounded-4 {
+    border-radius: 24px;
+}
+
+.rounded-3 {
+    border-radius: 16px;
+}
+
+.rounded-2 {
+    border-radius: 10px;
+}
+
+.primary {
+    background: linear-gradient(45deg, #34D0B6, #07A0C3);
+    color: white;
+}
+
+.text-primary {
+    background-image: linear-gradient(45deg, #34D0B6, #07A0C3) !important;
+    color: transparent !important;
+    -webkit-background-clip: text !important;
+    -moz-background-clip: text !important;
+    background-clip: text !important;
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, #34D0B6, #07A0C3);
+    color: white;
+    border: 0;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(45deg, #39e1c5, #08add3);
+    color: white;
+    border: 0;
+}
+
+.btn-warning {
+    background: linear-gradient(45deg, #E0BE36, #DD6E42);
+    color: white;
+    border: 0;
+}
+
+.btn-warning:hover {
+    background: linear-gradient(45deg, #e8c538, #ee7748);
+    color: white;
+    border: 0;
+}
+
+.transparent-background-primary {
+    background-color: rgba(7, 160, 195, 0.1) !important;
+}
+
+.font-64 {
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 64px !important;
+    font-weight: 800;
+    color: #07A0C3;
+    opacity: 20%;
+    line-height: 64px !important;
+}
+
+
+.vl {
+    border-left: 2px solid rgba(7, 160, 195, 0.5);
+    height: 100%;
+}
+
+.color-primary {
+    color: #07A0C3 !important;
+    border: 0
+}
+
+.text-orange {
+    color: #DD6E42;
+}
+
+#review {
+    background-color: rgba(7, 160, 195, 0.1);
+    border-radius: 0 0 32px 32px;
+}
+
+.fs-7 {
+    font-size: 14px !important;
+}
+
+.border-primary {
+    border-color: rgba(7, 160, 195, 0.3) !important;
+}
+
+.content {
+    max-height: calc(1.5em * 2);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    word-wrap: break-word;
+    opacity: 60%;
+}
+
+
+.show-all-content {
+    max-height: none; /* Show all content */
+    -webkit-line-clamp: initial;
+}
+
+.stars {
+    color: #FFD83B;
+}
+
+.bg-footer {
+    background-color: #0D2F29;
+}
+
+.floating-buttons {
+    position: fixed;
+    bottom: 20px; /* Adjust the bottom margin as needed */
+    right: 20px; /* Adjust the right margin as needed */
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+    z-index: 2 !important;
+}
+
+
+.step-number-badge {
+    height: 54px;
+    width: 54px;
+    top: 16px;
+    right: 16px;
+    color: #DD6E42;
+    font-weight: 900;
+    background-color: rgba(221, 110, 66, 0.25);
+}
+
+.bg-light-blue {
+    background-color: #E6F5F9 !important;
+}
+
+.bg-light-orange {
+    background-color: rgba(221, 110, 66, 0.15);
+}
+
+.background-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+.bg-card {
+    background-size: cover !important;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.image-how-it-works {
+    height: 150px !important;
+}
+
+.accordion-button:focus {
+    z-index: 3;
+    outline: 0;
+    box-shadow: 0 0 white;
+}
+
+.accordion {
+    --bs-accordion-border-color: transparent;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+    color: #fff;
+    border: 2px solid #07A0C3 !important;
+    background-color: #07A0C3 !important;
+}
+
+.custom-control-input ~ .custom-control-label::before {
+    border: 2px solid #07A0C3 !important;
+}
+
+.checkbox-custom label {
+    font-size: 1.2rem; /* Adjust label font size */
+}
+
+@media (max-width: 575.98px) {
+    .h7 {
+        font-size: 14px !important;
+    }
+
+    .h6 {
+        font-size: 15px !important;
+    }
+
+    .h5 {
+        font-size: 15px !important;
+    }
+
+    .h4 {
+        font-size: 18px !important;
+    }
+
+    .h1 {
+        font-size: 24px !important;
+    }
+
+    .footer-image {
+        height: 28px;
+    }
+
+    .step-number-badge {
+        height: 42px;
+        width: 42px;
+    }
+
+}
