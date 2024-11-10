@@ -70,7 +70,7 @@ export default {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(45deg, rgba(21, 21, 21, 0.3), rgba(12, 12, 12, 0.7));
+  background: linear-gradient(45deg, rgba(30, 30, 30, 0.5), rgba(16, 16, 16, 0.8));
   z-index: 0; /* Place the overlay below content but above the image */
   border-radius: 32px;
 }

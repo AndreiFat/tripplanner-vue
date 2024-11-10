@@ -17,14 +17,14 @@ import SecondaryButton from "@/components/Buttons/SecondaryButton.vue";
     <b-container class="top-section">
       <div class="d-flex justify-content-between align-items-center pb-2 border-bottom">
         <div>
-          <span class="btn btn-primary px-3 py-2 rounded-pill">1 of 10</span>
+          <span class="btn btn-primary m-0 px-2 py-1 px-md-3 py-md-2 rounded-pill h5">1 of 10</span>
         </div>
-        <h2 class="mb-0 h2">
+        <span class="mb-0 h3 text-right font-weight-bold d-inline-block" style="width: fit-content">
           Adding Accommodations
-        </h2>
+        </span>
       </div>
       <b-row class="mt-2 mt-md-4">
-        <b-col class="mb-4 mb-md-0" col md="5">
+        <b-col class="mb-4 mb-md-0" md="12" sm="12" xl="7" xs="12">
           <div class="d-flex justify-content-end align-items-center">
             <h4 class="mr-3 h4">Automatic detection</h4>
             <div
@@ -61,7 +61,7 @@ import SecondaryButton from "@/components/Buttons/SecondaryButton.vue";
           </ImageCard>
         </b-col>
 
-        <b-col col md="7">
+        <b-col md="12" sm="12" xl="7" xs="12">
           <div class="d-flex justify-content-end align-items-center">
             <h4 class="mr-3 h4">Manual addition</h4>
             <div
@@ -83,7 +83,7 @@ import SecondaryButton from "@/components/Buttons/SecondaryButton.vue";
                   <a href="https://www.gps.ie/">gps systems</a></iframe>
                 <div
                     class="position-absolute rounded-circle d-flex justify-content-center align-items-center primary circle shadow-lg"
-                    style="top:200px; left:300px;">
+                    style="top:100px; left:200px;">
                   <i class="fa-solid fa-xl fa-location-dot"></i>
                 </div>
               </div>

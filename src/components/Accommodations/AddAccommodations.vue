@@ -30,7 +30,7 @@ import PrimaryButton from "@/components/Buttons/PrimaryButton.vue";
 
 @media (max-width: 575.98px) {
   .accommodations {
-    height: calc(100dvh - 318px) !important;
+    height: calc(100dvh - 80px) !important;
   }
 }
 </style>

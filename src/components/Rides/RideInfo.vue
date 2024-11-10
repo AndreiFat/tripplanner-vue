@@ -4,21 +4,10 @@ import ImageBanner from "@/components/ImageBanner/ImageBanner.vue";
 import PrimaryButton from "@/components/Buttons/PrimaryButton.vue";
 import AppNavbar from "@/components/Template/AppNavbar.vue";
 import AppFooter from "@/components/Template/AppFooter.vue";
+import DropdownWithSelect from "@/components/Buttons/DropdownWithSelect.vue";
 
 export default {
-  components: {AppFooter, PrimaryButton, ImageBanner, AppNavbar},
-  data() {
-    return {
-      selected: null,
-      options: [
-        {value: null, text: 'Please select an option'},
-        {value: 'a', text: 'This is First option'},
-        {value: 'b', text: 'Selected Option'},
-        {value: {C: '3PO'}, text: 'This is an option with object value'},
-        {value: 'd', text: 'This one is disabled', disabled: true}
-      ]
-    }
-  }
+  components: {DropdownWithSelect, AppFooter, PrimaryButton, ImageBanner, AppNavbar},
 }
 </script>
 
@@ -83,10 +72,9 @@ export default {
                 class="text-right"
                 label="Age of participants"
                 label-for="age">
-              <b-form-select v-model="selected" :options="options"
-                             class="border-primary rounded-2 custom-height text-right"
-                             style="direction: rtl;"></b-form-select>
+              <DropdownWithSelect></DropdownWithSelect>
             </b-form-group>
+
 
             <b-form-group
                 id="label-details"

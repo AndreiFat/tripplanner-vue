@@ -20,7 +20,7 @@ export default {
 
 <template>
   <div class="card border-0 shadow-sm rounded-5">
-    <div class="card-body d-flex flex-column text-right gap-md-3 position-relative">
+    <div class="card-body p-2 p-md-3 d-flex flex-column text-right gap-md-3 position-relative">
       <div>
         <div
             :style="{ backgroundImage: 'url(' + backgroundImage + ')' }"

@@ -15,16 +15,16 @@ import SecondaryButton from "@/components/Buttons/SecondaryButton.vue";
       <img alt="" class="background-image" src="@/assets/images/illustrations/circles-background.png">
     </div>
     <b-container class="top-section">
-      <div class="d-flex justify-content-between align-items-center pb-2 border-bottom">
+      <div class="d-flex justify-content-between align-items-center pb-2 border-bottom gap-2">
         <div>
           <span class="btn btn-primary px-3 py-2 rounded-pill">1 of 10</span>
         </div>
-        <h2 class="mb-0 h2">
+        <h3 class="mb-0 h3 text-right font-weight-bold">
           Adding Attraction
-        </h2>
+        </h3>
       </div>
       <b-row class="mt-2 mt-md-4">
-        <b-col class="mb-4 mb-md-0" col md="5">
+        <b-col class="mb-4 mb-md-0" md="12" sm="12" xl="5" xs="12">
           <div class="d-flex justify-content-end align-items-center">
             <h4 class="mr-3 h4">Automatic detection</h4>
             <div
@@ -36,7 +36,7 @@ import SecondaryButton from "@/components/Buttons/SecondaryButton.vue";
                      date="14:47:01 2024:10:11"></ImageCard>
         </b-col>
 
-        <b-col col md="7">
+        <b-col class="mt-2 mt-md-4" md="12" sm="12" xl="7" xs="12">
           <div class="d-flex justify-content-end align-items-center">
             <h4 class="mr-3 h4">Manual addition</h4>
             <div
@@ -58,7 +58,7 @@ import SecondaryButton from "@/components/Buttons/SecondaryButton.vue";
                   <a href="https://www.gps.ie/">gps systems</a></iframe>
                 <div
                     class="position-absolute rounded-circle d-flex justify-content-center align-items-center primary circle shadow-lg"
-                    style="top:200px; left:300px;">
+                    style="top:100px; left:200px;">
                   <i class="fa-solid fa-xl fa-location-dot"></i>
                 </div>
               </div>
@@ -132,7 +132,7 @@ import SecondaryButton from "@/components/Buttons/SecondaryButton.vue";
   width: auto;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 830px) {
   .btn-mobile {
     width: 100%;
   }

@@ -16,7 +16,7 @@ export default defineComponent({
       <h3 class="h4 font-weight-bold">Is the image you selected associated with the point you chose on the map?</h3>
       <p class="h7 text-muted">This action will add the image to your ride as this specific point.</p>
       <NoButton>No</NoButton>
-      <YesButton>Yes</YesButton>
+      <YesButton class="ml-2">Yes</YesButton>
     </div>
   </PopUpTemplate>
 </template>
