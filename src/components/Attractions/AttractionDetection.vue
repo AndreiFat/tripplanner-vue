@@ -24,7 +24,7 @@ import SecondaryButton from "@/components/Buttons/SecondaryButton.vue";
         </h3>
       </div>
       <b-row class="mt-2 mt-md-4">
-        <b-col class="mb-4 mb-md-0" md="12" sm="12" xl="5" xs="12">
+        <b-col class="mb-4 mb-md-0" col md="12" sm="12" xl="5" xs="12">
           <div class="d-flex justify-content-end align-items-center">
             <h4 class="mr-3 h4">Automatic detection</h4>
             <div
@@ -36,7 +36,7 @@ import SecondaryButton from "@/components/Buttons/SecondaryButton.vue";
                      date="14:47:01 2024:10:11"></ImageCard>
         </b-col>
 
-        <b-col class="mt-2 mt-md-4" md="12" sm="12" xl="7" xs="12">
+        <b-col class="mt-2 mt-md-4" col md="12" sm="12" xl="7" xs="12">
           <div class="d-flex justify-content-end align-items-center">
             <h4 class="mr-3 h4">Manual addition</h4>
             <div
