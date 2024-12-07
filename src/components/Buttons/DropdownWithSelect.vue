@@ -1,10 +1,10 @@
 <template>
-  <b-dropdown id="dropdown-counter" class="bg-white w-100 dropdown-button"
-              text="The age composition of the participants"
+  <b-dropdown id="dropdown-counter" :text=placeholder
+              class="bg-white w-100 dropdown-button"
               toggle-class="d-flex justify-content-end align-items-center py-2 border-primary dropdown-button rounded-2"
               variant="outline-secondary">
-    <div class="d-flex justify-content-end align-items-center">
-      <div v-for="(item, index) in items" :key="index" class="p-2">
+    <b-row class="d-flex justify-content-end align-items-center px-4">
+      <b-col v-for="(item, index) in items" :key="index" class="col my-2">
         <span>{{ item.label }}</span>
         <b-input-group class="mt-1" size="sm">
           <b-input-group-prepend>
@@ -21,8 +21,8 @@
             <b-button variant="outline-secondary" @click="increment(index)">+</b-button>
           </b-input-group-append>
         </b-input-group>
-      </div>
-    </div>
+      </b-col>
+    </b-row>
   </b-dropdown>
 </template>
 
@@ -47,7 +47,13 @@ export default {
     decrement(index) {
       if (this.items[index].value > 0) this.items[index].value--;
     }
-  }
+  },
+  props: {
+    placeholder: {
+      type: String,
+      required: true
+    },
+  },
 };
 </script>
 

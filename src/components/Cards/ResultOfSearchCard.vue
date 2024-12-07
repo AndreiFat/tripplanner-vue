@@ -43,6 +43,24 @@ export default {
         trip4: require('@/assets/images/recommended-trips/trip4.png'),
       },
     }
+  },
+  methods: {
+    toggleContent() {
+      const button = this.$refs.toggleButton; // Get the button element
+      const cardContent = button.closest('.card-body').querySelector('.content');
+      if (!cardContent) {
+        console.error("Content element not found.");
+        return;
+      }
+
+      // Toggle the class
+      cardContent.classList.toggle('show-all-content');
+      this.isExpanded = cardContent.classList.contains('show-all-content');
+
+      // Update button text and styles
+      button.textContent = this.isExpanded ? "Less" : "More Data";
+      button.classList.add("color-primary"); // Ensure the class remains consistent
+    }
   }
 };
 </script>
@@ -53,7 +71,16 @@ export default {
       <b-row class="justify-content-center align-items-center">
         <b-col class="text-right order-2 order-md-1" md="7" sm="12" xs="12">
           <h4 class="fw-bold mb-3">{{ title }}</h4>
-          <p class="h6 font-weight-normal text-muted">{{ description }}</p>
+
+          <div id="content" class="mb-0 fs-6 content text-end text-muted">
+            {{ description }}
+          </div>
+          <p class="text-end mb-0">
+            <button ref="toggleButton"
+                    class="btn background-none p-0 m-0 color-primary"
+                    @click=toggleContent()>More Data
+            </button>
+          </p>
           <div class="d-flex justify-content-end mt-3">
             <div
                 class="bg-light-blue d-inline-flex px-3 py-2 rounded-pill align-items-center justify-content-center mr-2">
@@ -93,6 +120,22 @@ export default {
   </div>
 </template>
 
-<style scoped>
+<style>
+.content {
+  max-height: calc(1.5em * 2); /* Collapsed height */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2; /* Limit to 2 lines */
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  word-wrap: break-word;
+  opacity: 1; /* Make fully visible */
+  transition: max-height 0.3s ease; /* Smooth expand/collapse */
+}
 
+.show-all-content {
+  max-height: none; /* Expand fully */
+  -webkit-line-clamp: initial;
+  opacity: 1; /* Make fully visible */
+}
 </style>

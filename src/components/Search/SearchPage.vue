@@ -7,9 +7,12 @@ import ImageBanner from "@/components/ImageBanner/ImageBanner.vue";
 import DropdownFilter from "@/components/Buttons/DropdownFilter.vue";
 import ResultOfSearchCard from "@/components/Cards/ResultOfSearchCard.vue";
 import HowItWorks from "@/components/HowItWorks/HowItWorks.vue";
+import DropdownWithSelect from "@/components/Buttons/DropdownWithSelect.vue";
 
 export default defineComponent({
-  components: {HowItWorks, ResultOfSearchCard, DropdownFilter, ImageBanner, AppFooter, AppNavbar},
+  components: {
+    DropdownWithSelect, HowItWorks, ResultOfSearchCard, DropdownFilter, ImageBanner, AppFooter, AppNavbar
+  },
   data() {
     return {
       isCollapsed: false, // Tracks the state of the collapse
@@ -84,7 +87,7 @@ export default defineComponent({
         <div class="card border-0 shadow-sm p-md-2 rounded-5 mb-3">
           <div class="card-body d-flex flex-column text-right position-relative">
             <div class="d-flex align-items-center justify-content-between">
-              <p class="mb-0 h5 mr-3">Adjust the answers according to your preferences</p>
+              <h5 class="mb-0 mr-3">Adjust the answers according to your preferences</h5>
               <b-button
                   v-b-toggle.collapse-1
                   class="text-decoration-none d-flex align-items-center"
@@ -97,9 +100,9 @@ export default defineComponent({
             </div>
             <b-collapse id="collapse-1" class="mt-3" @hide="isCollapsed = false" @show="isCollapsed = true">
               <b-row class="mt-2">
-                <b-col col md="6" sm="12" xs="12">
+                <b-col col lg="6" md="12" sm="12" xs="12">
                   <b-row class="">
-                    <b-col md="4" sm="12" xs="12">
+                    <b-col class="pr-md-0" md="4" sm="12" xs="12">
                       <b-form-group
                           id="input-group-1"
                           class="text-right w-100 mr-2"
@@ -109,13 +112,13 @@ export default defineComponent({
                         <b-form-datepicker
                             id="example-datepicker"
                             :date-format-options="{ year: 'numeric', month: 'numeric', day: 'numeric' }"
-                            class="form-control border-primary rounded-2 text-right py-1"
+                            class="form-control border-primary rounded-2 text-right py-1 d-flex align-items-center"
                             placeholder="Check-out"
                             style="direction: rtl;"
                         ></b-form-datepicker>
                       </b-form-group>
                     </b-col>
-                    <b-col md="4" sm="12" xs="12">
+                    <b-col class="pr-md-0" md="4" sm="12" xs="12">
                       <b-form-group
                           id="input-group-1"
                           class="text-right w-100 mr-2"
@@ -125,7 +128,7 @@ export default defineComponent({
                         <b-form-datepicker
                             id="example-datepicker"
                             :date-format-options="{ year: 'numeric', month: 'numeric', day: 'numeric' }"
-                            class="form-control border-primary rounded-2 text-right py-1"
+                            class="form-control border-primary rounded-2 text-right py-1 d-flex align-items-center"
                             placeholder="Check-out"
                             style="direction: rtl;"
                         ></b-form-datepicker>
@@ -137,14 +140,14 @@ export default defineComponent({
                           class="text-right w-100"
                           label="Age of participants"
                           label-for="age">
-                        <DropdownFilter></DropdownFilter>
+                        <DropdownWithSelect placeholder="Select Age"></DropdownWithSelect>
                       </b-form-group>
                     </b-col>
                   </b-row>
                 </b-col>
-                <b-col class="" md="6" sm="12" xs="12">
+                <b-col class="" lg="6" md="12" sm="12" xs="12">
                   <b-row>
-                    <b-col col md="6" sm="12" xs="12">
+                    <b-col class="pr-md-0" md="6" sm="12" xs="12">
                       <b-form-group
                           id="label-age"
                           class="text-right w-100 mr-2"
@@ -166,6 +169,15 @@ export default defineComponent({
 
                 </b-col>
               </b-row>
+              <div class="d-flex align-items-center justify-content-end">
+                <button
+                    class="btn btn-secondary mr-2 mr-md-3 w-100 custom-width px-md-5 py-3 rounded-pill fw-semibold h5 mb-0 z-2">
+                  Reset Filters
+                </button>
+                <button class="btn btn-primary px-md-5 w-100 custom-width py-3 rounded-pill fw-semibold h5 mb-0 z-2">
+                  Apply Filters
+                </button>
+              </div>
             </b-collapse>
           </div>
         </div>
@@ -204,12 +216,15 @@ export default defineComponent({
       </div>
     </div>
     <HowItWorks></HowItWorks>
-
     <AppFooter/>
   </div>
 </template>
 
 <style scoped>
+.form-control {
+  height: 50px !important;
+}
+
 .input-icon {
   position: relative;
   width: 60%;
@@ -251,5 +266,9 @@ export default defineComponent({
   }
 }
 
-
+@media (min-width: 768px) {
+  .custom-width {
+    width: auto !important;
+  }
+}
 </style>

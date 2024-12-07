@@ -21,7 +21,7 @@ export default {
 
 <style>
 #dropdown {
-  height: 46px;
+  height: 50px;
 }
 
 .dropdown-menu {

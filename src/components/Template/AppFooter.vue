@@ -47,7 +47,7 @@
               <p class=" h5 fw-bold">Social Media</p>
               <div class="opacity-75">
                 <p class=" h6">
-                  <i class="fa-md-xl fa-lg fa-brands fa-facebook"></i> Facebook
+                  <i class="fa-md-xl fa-lg fa-brands fa-facebook mr-1"></i> Facebook
                 </p>
               </div>
             </div>

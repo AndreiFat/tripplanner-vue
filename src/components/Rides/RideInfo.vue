@@ -72,7 +72,7 @@ export default {
                 class="text-right"
                 label="Age of participants"
                 label-for="age">
-              <DropdownWithSelect></DropdownWithSelect>
+              <DropdownWithSelect placeholder="The age composition of the participants"></DropdownWithSelect>
             </b-form-group>
 
 

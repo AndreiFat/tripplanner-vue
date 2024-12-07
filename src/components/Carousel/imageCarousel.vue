@@ -23,7 +23,7 @@ export default {
       img-height="auto"
       img-width="auto"
       indicators
-      style="text-shadow: 1px 1px 2px #333;"
+      style="text-shadow: 1px 1px 2px #333; border-radius: 16px; overflow: hidden;"
   >
     <b-carousel-slide>
       <template #img>
