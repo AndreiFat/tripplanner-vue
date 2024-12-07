@@ -209,6 +209,10 @@ a.hover {
     font-size: 1.2rem; /* Adjust label font size */
 }
 
+.btn:focus {
+    box-shadow: none !important;
+}
+
 @media (max-width: 575.98px) {
     .h7 {
         font-size: 14px !important;

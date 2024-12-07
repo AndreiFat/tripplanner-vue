@@ -12,6 +12,8 @@ import AttractionDetection from "@/components/Attractions/AttractionDetection.vu
 import AccommodationDetection from "@/components/Accommodations/AccommodationDetection.vue";
 import RideInfo from "@/components/Rides/RideInfo.vue";
 import HomePage from "@/components/HomePage.vue";
+import Search from "@/components/Search/SearchPage.vue";
+import WelcomePage from "@/WelcomePage.vue";
 
 Vue.config.productionTip = false
 Vue.use(BootstrapVue)
@@ -26,7 +28,9 @@ const routes = [
     {path: '/attraction_detection', component: AttractionDetection},
     {path: '/accommodations_detection', component: AccommodationDetection},
     {path: '/ride_info', component: RideInfo},
-    {path: '/popups', component: HomePage}
+    {path: '/popups', component: HomePage},
+    {path: '/search', component: Search},
+    {path: '/', component: WelcomePage},
 ]
 
 // Set up VueRouter with routes
