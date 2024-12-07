@@ -81,6 +81,7 @@ export default {
   z-index: 2 !important; /* Content above the overlay */
   text-align: center;
   color: #ffffff !important;
+  width: 100%;
 }
 
 @media (max-width: 575.98px) {
