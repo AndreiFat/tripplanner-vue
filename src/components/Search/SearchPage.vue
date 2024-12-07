@@ -134,13 +134,13 @@ export default defineComponent({
                         ></b-form-datepicker>
                       </b-form-group>
                     </b-col>
-                    <b-col md="4" sm="12" xs="12">
+                    <b-col class="pr-md-0" md="4" sm="12" xs="12">
                       <b-form-group
                           id="label-age"
                           class="text-right w-100"
                           label="Age of participants"
                           label-for="age">
-                        <DropdownWithSelect placeholder="Select Age"></DropdownWithSelect>
+                        <DropdownWithSelect col-size=12 placeholder="Select Age"></DropdownWithSelect>
                       </b-form-group>
                     </b-col>
                   </b-row>

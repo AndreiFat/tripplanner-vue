@@ -72,7 +72,8 @@ export default {
                 class="text-right"
                 label="Age of participants"
                 label-for="age">
-              <DropdownWithSelect placeholder="The age composition of the participants"></DropdownWithSelect>
+              <DropdownWithSelect col-size=4
+                                  placeholder="The age composition of the participants"></DropdownWithSelect>
             </b-form-group>
 
 
@@ -123,6 +124,11 @@ export default {
 #checkbox-1 {
   display: flex;
   align-items: center;
+}
+
+.dropdown-menu {
+  margin-top: 6px;
+  width: 100% !important;
 }
 
 </style>

@@ -3,10 +3,11 @@
               class="bg-white w-100 dropdown-button"
               toggle-class="d-flex justify-content-end align-items-center py-2 border-primary dropdown-button rounded-2"
               variant="outline-secondary">
-    <b-row class="d-flex justify-content-end align-items-center px-4">
-      <b-col v-for="(item, index) in items" :key="index" class="col my-2">
+    <b-row class="d-flex justify-content-end align-items-center px-3">
+      <b-col v-for="(item, index) in items" :key="index" :md="colSize" :sm="colSize" :xs="colSize"
+             class="my-2 px-2 text-right">
         <span>{{ item.label }}</span>
-        <b-input-group class="mt-1" size="sm">
+        <b-input-group class="" size="sm">
           <b-input-group-prepend>
             <b-button variant="outline-secondary" @click="decrement(index)">-</b-button>
           </b-input-group-prepend>
@@ -53,6 +54,10 @@ export default {
       type: String,
       required: true
     },
+    colSize: {
+      type: Number,
+      default: 12
+    }
   },
 };
 </script>
@@ -60,7 +65,9 @@ export default {
 <style>
 #dropdown-counter {
   height: 50px;
+  width: 100%;
 }
+
 
 .show > .btn-outline-secondary.dropdown-toggle, .btn-outline-secondary:hover, #dropdown-counter .dropdown-button:active {
   background-color: white !important;
