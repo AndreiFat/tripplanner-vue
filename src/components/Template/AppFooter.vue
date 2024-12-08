@@ -1,5 +1,11 @@
-<script setup>
+<script>
 
+import {defineComponent} from "vue";
+import LinkFooter from "@/components/Buttons/LinkFooter.vue";
+
+export default defineComponent({
+  components: {LinkFooter}
+})
 </script>
 
 <template>
@@ -22,13 +28,13 @@
               <p class=" h5 fw-bold">Pages</p>
               <div class="opacity-75">
                 <p class="h6">
-                  Home
+                  <LinkFooter href="/">Home</LinkFooter>
                 </p>
                 <p class="h6">
-                  About
+                  <LinkFooter href="/">About</LinkFooter>
                 </p>
                 <p class="mb-0 h6">
-                  Contact
+                  <LinkFooter href="/">Contact</LinkFooter>
                 </p>
               </div>
             </div>
@@ -36,10 +42,10 @@
               <p class=" h5 fw-bold">Other</p>
               <div class="opacity-75">
                 <p class=" h6">
-                  Terms
+                  <LinkFooter href="/">Terms</LinkFooter>
                 </p>
                 <p class=" h6">
-                  Search Trips
+                  <LinkFooter href="/">Search Trips</LinkFooter>
                 </p>
               </div>
             </div>
@@ -47,7 +53,7 @@
               <p class=" h5 fw-bold">Social Media</p>
               <div class="opacity-75">
                 <p class=" h6">
-                  <i class="fa-md-xl fa-lg fa-brands fa-facebook mr-1"></i> Facebook
+                  <LinkFooter href="/"><i class="fa-md-xl fa-lg fa-brands fa-facebook mr-1"></i> Facebook</LinkFooter>
                 </p>
               </div>
             </div>
