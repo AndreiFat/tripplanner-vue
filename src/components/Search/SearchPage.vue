@@ -86,7 +86,8 @@ export default defineComponent({
       <div class="container">
         <div class="card border-0 shadow-sm p-md-2 rounded-5 mb-3">
           <div class="card-body d-flex flex-column text-right position-relative">
-            <div class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center justify-content-end">
+              <h5 class="mb-0 mr-3 text-right">Adjust the answers according to your preferences</h5>
               <b-button
                   v-b-toggle.collapse-1
                   class="text-decoration-none d-flex align-items-center"
@@ -96,7 +97,7 @@ export default defineComponent({
                 <span :class="['arrow', { rotated: isCollapsed }]"></span>
 
               </b-button>
-              <h5 class="mb-0 mr-3">Adjust the answers according to your preferences</h5>
+
             </div>
             <b-collapse id="collapse-1" class="mt-3" @hide="isCollapsed = false" @show="isCollapsed = true">
               <b-row class="mt-2">
